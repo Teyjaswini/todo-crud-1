@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core"
-import { Itodo } from "../models/todo"
-import { SnackBarService } from "../service/snackBar.service"
+import { Itodo } from "../../models/todo"
+import { SnackBarService } from "../../service/snackBar.service"
+
 
 
 @Component({

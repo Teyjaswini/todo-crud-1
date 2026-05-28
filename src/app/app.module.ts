@@ -12,8 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
-import { GetConfirmComponent } from './shared/components/get-confirm/get-confirm.component'
-
+import { GetConfirmComponent } from './shared/get-confirm/get-confirm.component';
 
 @NgModule({
   declarations: [

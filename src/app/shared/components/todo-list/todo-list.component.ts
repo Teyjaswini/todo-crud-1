@@ -1,7 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { GetConfirmComponent } from '../get-confirm/get-confirm.component';
-import { Itodo } from '../models/todo';
+import { Itodo } from '../../models/todo';
+import { GetConfirmComponent } from '../../get-confirm/get-confirm.component';
+
 
 @Component({
   selector: 'app-todo-list',
