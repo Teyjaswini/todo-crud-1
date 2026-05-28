@@ -1,7 +1,8 @@
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges, ViewChild } from "@angular/core";
 import { NgForm } from "@angular/forms";
-import { Itodo } from "../models/todo";
-import { TodoService } from "../service/todo.service";
+import { Itodo } from "../../models/todo";
+import { TodoService } from "../../service/todo.service";
+
 
 
 @Component({
