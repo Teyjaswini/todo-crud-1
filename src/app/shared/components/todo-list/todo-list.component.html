@@ -1,0 +1,25 @@
+<ul class="list-group" *ngIf="getTodos.length > 0; else noTodos">
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let todo of getTodos">
+        <div class="d-flex align-items-center">
+            <strong [ngClass]="{'text-decoration-line-through' : todo.isCompleted}">
+                {{todo.todoItem}}
+            </strong>
+        </div>
+
+        <div>
+            <button (click)="onEdit(todo)" mat-mini-fab color="primary" class="mr-2">
+                <mat-icon>edit</mat-icon>
+            </button>
+
+            <button mat-mini-fab color="warn" (click)="onTodoRemove(todo.todoId)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </div>
+    </li>
+</ul>
+
+<ng-template #noTodos>
+    <p class="alert alert-info">
+        No Todos !!!
+    </p>
+</ng-template>
