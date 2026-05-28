@@ -1,5 +1,5 @@
 <ul class="list-group" *ngIf="getTodos.length > 0; else noTodos">
-    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let todo of getTodos">
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let todo of getTodos; trackBy: trackByTodo">
         <div class="d-flex align-items-center">
             <strong [ngClass]="{'text-decoration-line-through' : todo.isCompleted}">
                 {{todo.todoItem}}

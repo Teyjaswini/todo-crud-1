@@ -40,4 +40,8 @@ export class TodoListComponent implements OnInit {
     this.emitEditTodo.emit(edittodo)
   }
 
+  trackByTodo(index: number, item: Itodo) {
+    return item.todoId
+  }
+
 }
